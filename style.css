@@ -1,0 +1,32 @@
+/* * MUDANÇA AQUI:
+ * Trocamos ".header-rigth" por ".header-inner",
+ * que é o "pai" que realmente existe no seu HTML.
+*/
+.header-inner {
+  position: relative;
+  /* * As linhas abaixo provavelmente já existem no seu CSS 
+   * para .header-inner. Se sim, apenas adicione: position: relative;
+  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* O painel flutuante (Sem alterações, está correto) */
+.floating-panel {
+  display: none; /* Escondido por padrão */
+  position: absolute;
+  top: 100%; /* Posição: logo abaixo do .header-inner */
+  right: 0;
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+/* A classe que o JavaScript vai adicionar (Sem alterações) */
+.floating-panel.mostrar {
+  display: block; /* Torna o painel visível */
+}

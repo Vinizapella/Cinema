@@ -16,7 +16,7 @@
                     <div class="header-logo">
                         <div class="image-logo">
                             <a href="index.html">
-                                <img src="images-index/pngegg.png" alt="logo image">
+                                <img src="images-index/logoo.png" alt="logo image">
                             </a>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="header-menu">
-                    <nav class="menu-header" aria-label="Menu principal de pesquisa no início">
+                    <nav class="menu-header" aria-label="Main search menu at the beginning">
                         <ul>
                             <li><a href="#" class="active">Início</a></li>
                             <li><a href="#">Filmes</a></li>
@@ -40,21 +40,30 @@
             <div class="header-rigth">
                 <i class="header-search-tab"></i> 
                     <input type="text" placeholder="Buscar filmes, séries...">
-                
+                -->
                     
-                <a href="#" class="notification-bell" aria-label="Notificações">
-                        <i class="fas fa-bell"></i>
-                </a>
-
-                <a href="#" class="profile-avatar" aria-label="Perfil do usuário">
-                    <img src="images/avatar-placeholder.jpg" alt="Avatar do usuário">
-                </a>
+                <button id="button-notification" class="header-notification" aria-label="notifications button">
+                    <div class="bell"><img src="images-index/bell.png" alt="bell image"></div>
+                </button>
                 
-            </div>
-            -->
+                <div id="notifications-panel" class="floating-panel">
+                    <h4>Notificações</h4>
+                    <ul>
+                        <li>Nova notificação 1</li>
+                        <li>Nova notificação 2</li>
+                    </ul>
+                </div>
+               
+                <button id="button-profile-avatar" class="header-profile-avatar" aria-label="profile button">
+                    <div class="profile"><img src="images-index/mona-lisa-a-obra-mais-famosa-de-leonardo-da-vinci.webp" alt="foto de perfil clicável"</div>
+                </button>
+                                
+            
         </div>
 
     </header>
-    
+
 </body>
+    <script src="main.js"></script>
+
 </html>
