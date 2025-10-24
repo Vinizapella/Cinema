@@ -33,4 +33,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
 
+
+});
+
+// 1. Pega os elementos do HTML pelos IDs ATUALIZADOS
+const form = document.getElementById('search-bar');
+const input = document.getElementById('search-bar-input');
+
+// 2. Adiciona o "ouvinte de evento" ao formulário.
+//    (Exatamente como antes)
+form.addEventListener('submit', function(evento) {
+    
+    // 3. Impede que o formulário recarregue a página
+    evento.preventDefault(); 
+
+    // 4. (Opcional) Mostra o valor no console
+    console.log("Texto 'pesquisado':", input.value);
+
+    // 5. Limpa o campo de input (faz o texto "sumir")
+    input.value = ""; 
 });

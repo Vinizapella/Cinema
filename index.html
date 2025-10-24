@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artenomedia</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +20,7 @@
                         </div>
                     </div>
                     <div class="header-title">
-                        <h2 class="text-logo">Arte no <br> Médio</h2>
+                        <p class="text-logo">Arte no <br> Médio</p>
                     </div>
                 </div>
                 <div class="header-menu">
@@ -36,34 +35,41 @@
                     </nav>
                 </div>
             </div>
-            
             <div class="header-rigth">
- 
-                <form id="search-bar">
-                    <input type="text" id="search-bar-input" placeholder="Burca Filmes/Séries...">
-
-                    <button type="submit">QUERO COLOCAR UMA FOTO</button>
-                </form>    
-                    
-                <button id="button-notification" class="header-notification" aria-label="notifications button">
-                    <div class="bell"><img src="images-index/bell.png" alt="bell image"></div>
-                </button>
-                
-                <div id="notifications-panel" class="floating-panel">
-                    <h4>Notificações</h4>
-                    <ul>
-                        <li>Nova notificação 1</li>
-                        <li>Nova notificação 2</li>
-                    </ul>
+                <div class="header-search-bar">
+                    <form id="search-bar">
+                        <div class="box-search-bar">
+                            <input type="text" id="search-bar-input" placeholder="Burca Filmes/Séries...">
+                        </div>
+                        <div class="icon-search-bar">
+                            <button type="submit"><img src="images-index/lupa.png" alt="image of a magnifying glass in the search tab"></button>
+                        </div>
+                    </form>   
+                </div> 
+                <div class="header-notification">
+                    <div class="header-icon-notification">
+                        <button id="button-notification" class="icon-notification" aria-label="notifications button">
+                            <div class="bell"><img src="images-index/bell.png" alt="bell image"></div>
+                        </button>
+                    </div>
+                    <!--
+                    <div class="header-floating-panel">
+                        <div id="notifications-panel" class="floating-panel">
+                            <h4>Notificações</h4>
+                            <ul>
+                                <li>Nova notificação 1</li>
+                                <li>Nova notificação 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
                 </div>
-               
-                <button id="button-profile-avatar" class="header-profile-avatar" aria-label="profile button">
-                    <div class="profile"><img src="images-index/mona-lisa-a-obra-mais-famosa-de-leonardo-da-vinci.webp" alt="foto de perfil clicável"</div>
-                </button>
-                                
-            
+               <div class="header-profile-avatar"></div>
+                    <button id="button-profile-avatar" class="profile-avatar" aria-label="profile button">
+                        <div class="profile"><img src="images-index/mona-lisa-a-obra-mais-famosa-de-leonardo-da-vinci.webp" alt="foto de perfil clicável"></div>
+                    </button>  
+                </div>     
         </div>
-
     </header>
 
 </body>
