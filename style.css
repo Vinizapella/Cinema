@@ -30,3 +30,14 @@
 .floating-panel.mostrar {
   display: block; /* Torna o painel visível */
 }
+
+#meuSlideshow {
+  /* Define a opacidade inicial como 1 (visível) */
+  opacity: 1; 
+
+  /* A mágica acontece aqui:
+     Qualquer mudança na 'opacidade' levará 0.5 segundos 
+     com um efeito suave (ease-in-out) 
+  */
+  transition: opacity 0.5s ease-in-out; 
+}
